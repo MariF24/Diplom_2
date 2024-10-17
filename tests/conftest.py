@@ -19,7 +19,7 @@ def registration_and_sign_in_and_delete_user():
 
     yield response
 
-    response_delete = requests.delete(f"{URL}api/auth/user", headers={'Authorization': f'{accessToken}'})
-    return response_delete
+    requests.delete(f"{URL}api/auth/user", headers={'Authorization': f'{accessToken}'})
+
 
 
